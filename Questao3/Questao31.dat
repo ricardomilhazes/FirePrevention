@@ -1,0 +1,20 @@
+/*********************************************
+ * OPL 12.8.0.0 Data
+ * Author: Ricardo
+ * Creation Date: 06/12/2018 at 16:10:27
+ *********************************************/
+
+SheetConnection sheet("Questao3.xlsx");
+b from SheetRead(sheet,"Folha1!b");
+n from SheetRead(sheet,"Folha1!n");
+delta from SheetRead(sheet,"Folha1!delta");
+intervalo from SheetRead(sheet,"Folha1!intervalo");
+prob from SheetRead(sheet,"Folha1!prob");
+Norte from SheetRead(sheet,"Folha1!Norte");
+Sul from SheetRead(sheet,"Folha1!Sul");
+Este from SheetRead(sheet,"Folha1!Este");
+Oeste from SheetRead(sheet,"Folha1!Oeste");
+
+y to SheetWrite(sheet,"Folha1!y");
+t to SheetWrite(sheet,"Folha1!t");
+x to SheetWrite(sheet,"Folha1!x");

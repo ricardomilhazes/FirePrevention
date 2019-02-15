@@ -1,0 +1,15 @@
+/*********************************************
+ * OPL 12.8.0.0 Data
+ * Author: Ricardo
+ * Creation Date: 06/12/2018 at 00:47:17
+ *********************************************/
+
+SheetConnection sheet("Questao1Dual.xlsx");
+ 
+n from SheetRead(sheet,"Folha1!n");
+Norte from SheetRead(sheet,"Folha1!Norte");
+Sul from SheetRead(sheet,"Folha1!Sul");
+Este from SheetRead(sheet,"Folha1!Este");
+Oeste from SheetRead(sheet,"Folha1!Oeste");
+
+y to SheetWrite(sheet,"Folha1!y");
